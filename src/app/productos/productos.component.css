@@ -1,0 +1,116 @@
+:host {
+  display: block;
+}
+
+.product-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.view-product-button{
+  background-color: #0056b3;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3 ease;
+}
+
+.view-product-button:hover{
+  background-color: #007bff;
+}
+
+.product-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 10px;
+  max-width: 300px;
+  flex: 1 1 calc(33.33% - 20px);
+  box-sizing: border-box;
+}
+
+.product-image-container{
+  position: relative;
+  width: 100%;
+  max-width: 150px;
+  margin: 0 auto;
+}
+
+.product-image{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.sale-badge{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: red;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+}
+
+.product-detail{
+  padding: 10px;
+}
+
+.product-title{
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.product-price{
+  color: green;
+  font-size: 1.2em;
+  margin: 5px 0;
+}
+
+.product-description{
+  font-size: 0.9em;
+  color: #555;
+}
+
+@media(max-width:500px){
+  .product-card{
+    flex: 1 1 100%;
+  }
+}
+
+.tachado{
+  text-decoration: line-through;
+}
+
+.product-price-oferta{
+  color:red;
+  font-size: 1.1em;
+  margin: 5px 0;
+}
+
+.oferta-precio{
+  background-color: red;
+  color: white;
+  padding: 5px;
+  font-size: 0.8em;
+  width: auto;
+  display: inline-block;
+}
+
+.price-container{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
